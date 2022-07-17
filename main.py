@@ -163,7 +163,7 @@ def preprocess(idx, seed, args, path=None):
 
         if path is not None:
             np.save(path + f'_{idx}_{seed}.npy', result)
-            print(idx, seed, "执行完毕，耗时%0.2f" % (time() - st))
+            print('end', idx, seed, "time %0.2f" % (time() - st))
         else:
             return result
     except Exception as ex:
